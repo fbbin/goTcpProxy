@@ -102,6 +102,7 @@ func pass(from net.Conn, to net.Conn, complete chan bool, oneSide chan bool, oth
 				oneSide <- true
 				return
 			}
+			oneSide <- true
 		}
 	}
 }
